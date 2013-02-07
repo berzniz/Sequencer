@@ -86,6 +86,33 @@ Sequencer *sequencer = [[Sequencer alloc] init];
 2. The second step reads the canonicalURL, downloads it and send it to the next step.
 3. The third and last step turns the data into a string and outputs it.
 
+## CocoaPods
+
+Sequencer can be included via the [CocoaPods package manager](http://cocoapods.org/).
+
+Install CocoaPods if not already available:
+
+```
+$ [sudo] gem install cocoapods
+$ pod setup
+```
+
+Edit your Podfile and add Sequencer:
+
+```
+$ edit Podfile
+platform :ios, '5.0'
+pod 'Sequencer'
+```
+
+Install into your Xcode project:
+
+```
+$ pod install
+```
+
+(Big thanks to [Ary](https://github.com/arytbk) for adding Sequencer to CocoaPods)
+
 ## License
 
 Sequencer is available under the MIT license:
